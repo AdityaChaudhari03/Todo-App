@@ -22,7 +22,7 @@ const Update = ({ display, update }) => {
 
   const submit = async () => {
     await axios
-      .put(`http://localhost:3000/api/v2/updateTask/${update._id}`, Inputs)
+      .put(`https://todo-backend-6taj.onrender.com/api/v2/updateTask/${update._id}`, Inputs)
       .then((response) => {
         toast.success(response.data.message);
       });
